@@ -1,0 +1,19 @@
+name: Task
+description: A change or improvement to make
+labels: [task]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should be true when this is done?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and links
+  - type: input
+    id: due
+    attributes:
+      label: Needed by

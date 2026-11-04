@@ -1,0 +1,36 @@
+name: Bug
+description: Something is broken
+labels: [bug]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Where (URL, file or command)
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens, and what should happen
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. ...\n2. ...\n3. ..."
+  - type: input
+    id: env
+    attributes:
+      label: Device, browser or environment
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      options:
+        - Blocks sales or a live service
+        - Wrong content, price or data
+        - Visual or minor
+        - Other
+    validations:
+      required: true
